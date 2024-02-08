@@ -1,0 +1,21 @@
+{
+    "name": "acme/acme-widget-cart",
+    "description": "Acme Widget Cart",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": "^8.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.2"
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    }
+}

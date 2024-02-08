@@ -11,9 +11,6 @@ use DomainException;
  */
 final class ProductCode
 {
-    // TODO: replace with a schema to validate future codes
-    protected const VALID_CODES = ['R01', 'G01', 'B01'];
-
     /**
      * Constructs ProductCode
      *
@@ -23,8 +20,9 @@ final class ProductCode
      */
     protected function __construct(protected string $code)
     {
-        if (!in_array($this->code, static::VALID_CODES)) {
-            throw new DomainException(sprintf('Invalid product code: %s', $this->code));
+        // TODO: update validations to match expected product code formatting
+        if (!preg_match('/^[A-Z0-9]+$/', $this->code)) {
+            throw new DomainException('Product code expected to be uppercase letters and numbers');
         }
     }
 

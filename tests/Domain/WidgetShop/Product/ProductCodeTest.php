@@ -24,6 +24,6 @@ class ProductCodeTest extends TestCase
     {
         static::expectException(DomainException::class);
 
-        ProductCode::fromString('1234');
+        ProductCode::fromString('r01');
     }
 }

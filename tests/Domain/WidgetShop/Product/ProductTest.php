@@ -27,7 +27,7 @@ class ProductTest extends TestCase
         ];
     }
 
-    public function test_that_name_returns_expected_value()
+    public function test_that_name_returns_expected_value(): void
     {
         $product = Product::provision(
             $this->record['name'],
@@ -38,7 +38,7 @@ class ProductTest extends TestCase
         static::assertSame($this->record['name'], $product->name());
     }
 
-    public function test_that_code_returns_expected_value()
+    public function test_that_code_returns_expected_value(): void
     {
         $product = Product::provision(
             $this->record['name'],
@@ -49,7 +49,7 @@ class ProductTest extends TestCase
         static::assertSame($this->record['code'], $product->code()->toString());
     }
 
-    public function test_that_price_returns_expected_value()
+    public function test_that_price_returns_expected_value(): void
     {
         $product = Product::provision(
             $this->record['name'],
@@ -60,7 +60,7 @@ class ProductTest extends TestCase
         static::assertSame('$32.95', $product->price()->format());
     }
 
-    public function test_that_created_at_returns_expected_value_from_record()
+    public function test_that_created_at_returns_expected_value_from_record(): void
     {
         $product = Product::fromRecord($this->record);
 
@@ -74,7 +74,7 @@ class ProductTest extends TestCase
         static::assertSame($this->record['modified_at'], $product->modifiedAt()->format('Y-m-d H:i:s'));
     }
 
-    public function test_that_to_record_returns_same_values_as_original_record()
+    public function test_that_to_record_returns_same_values_as_original_record(): void
     {
         $product = Product::fromRecord($this->record);
 

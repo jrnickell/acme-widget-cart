@@ -7,9 +7,9 @@ use Acme\Adapter\Offers\BogoHalfRedWidget;
 use Acme\Adapter\Repository\InMemoryBasketRepository;
 use Acme\Adapter\Repository\StaticProductRepository;
 use Acme\Adapter\Service\ServiceContainer;
-use Acme\Application\Services\Cart\CartService;
-use Acme\Application\Services\Delivery\DeliveryCalculator;
-use Acme\Application\Services\Offers\SpecialOfferCartService;
+use Acme\Application\Service\Cart\CartService;
+use Acme\Application\Service\Delivery\DeliveryCalculator;
+use Acme\Application\Service\Offers\SpecialOfferCartService;
 use Acme\Domain\WidgetShop\Basket\BasketRepository;
 use Acme\Domain\WidgetShop\Product\ProductRepository;
 

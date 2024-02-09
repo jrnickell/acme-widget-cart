@@ -9,6 +9,8 @@ use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * Class ServiceContainer
+ *
+ * @codeCoverageIgnore
  */
 final class ServiceContainer implements ContainerInterface
 {

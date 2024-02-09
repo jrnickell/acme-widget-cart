@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Acme\Adapter\Offers;
 
-use Acme\Application\Services\Offers\SpecialOffer;
+use Acme\Application\Service\Offers\SpecialOffer;
 use Acme\Domain\WidgetShop\Basket\BasketId;
 use Acme\Domain\WidgetShop\Basket\BasketRepository;
 use Acme\Domain\WidgetShop\Product\Price;

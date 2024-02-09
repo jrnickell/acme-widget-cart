@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Acme\Application\Services\Offers;
+namespace Acme\Application\Service\Offers;
 
-use Acme\Application\Services\Cart\CartService;
-use Acme\Application\Services\Delivery\DeliveryCalculator;
+use Acme\Application\Service\Cart\CartService;
+use Acme\Application\Service\Delivery\DeliveryCalculator;
 use Acme\Domain\WidgetShop\Basket\Basket;
 use Acme\Domain\WidgetShop\Basket\BasketId;
 use Acme\Domain\WidgetShop\Basket\BasketRepository;

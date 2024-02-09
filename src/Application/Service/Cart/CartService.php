@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Acme\Application\Services\Cart;
+namespace Acme\Application\Service\Cart;
 
 use Acme\Domain\WidgetShop\Basket\BasketId;
 use Acme\Domain\WidgetShop\Product\Price;

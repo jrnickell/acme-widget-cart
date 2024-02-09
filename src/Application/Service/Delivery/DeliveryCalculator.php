@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Acme\Application\Services\Delivery;
+namespace Acme\Application\Service\Delivery;
 
 use Acme\Domain\WidgetShop\Product\Price;
 

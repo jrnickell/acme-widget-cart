@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Acme\Adapter\Delivery;
 
-use Acme\Application\Services\Delivery\DeliveryCalculator;
+use Acme\Application\Service\Delivery\DeliveryCalculator;
 use Acme\Domain\WidgetShop\Product\Price;
 
 /**

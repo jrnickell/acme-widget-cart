@@ -12,7 +12,7 @@ use PHPUnit\Framework\TestCase;
 #[CoversClass(Price::class)]
 class PriceTest extends TestCase
 {
-    public function test_that_amount_returns_expected_value()
+    public function test_that_amount_returns_expected_value(): void
     {
         $amount = 2743;
         $price = Price::fromCents($amount);
@@ -20,7 +20,7 @@ class PriceTest extends TestCase
         static::assertSame($amount, $price->amount());
     }
 
-    public function test_that_currency_returns_expected_value()
+    public function test_that_currency_returns_expected_value(): void
     {
         $amount = 2743;
         $price = Price::fromCents($amount);
@@ -28,7 +28,7 @@ class PriceTest extends TestCase
         static::assertSame('USD', $price->currency());
     }
 
-    public function test_that_format_returns_expected_value()
+    public function test_that_format_returns_expected_value(): void
     {
         $amount = 2743;
         $price = Price::fromCents($amount);
@@ -36,7 +36,7 @@ class PriceTest extends TestCase
         static::assertSame('$27.43', $price->format());
     }
 
-    public function test_that_from_cents_throws_exception_for_negative_amount()
+    public function test_that_from_cents_throws_exception_for_negative_amount(): void
     {
         static::expectException(DomainException::class);
 

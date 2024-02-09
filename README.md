@@ -33,6 +33,14 @@ $ `bin/up`
 
 $ `bin/phpunit`
 
+### Code Coverage
+
+Code coverage report may be viewed after running the test suite.
+
+Load the index.html file in your local browser to view.
+
+`var/reports/coverage/index.html`
+
 ### Take Down Environment
 
 $ `bin/down`
